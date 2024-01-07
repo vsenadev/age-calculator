@@ -1,0 +1,38 @@
+@import '../../assets/styles/_variables.sass'
+
+.container
+  width: 100%
+  height: 25%
+  display: flex
+  gap: 2px
+
+  &__box
+    display: flex
+    width: 20%
+    flex-direction: column
+    gap: 0.5rem
+
+    &_label
+      font-size: 14px
+      font-family: $fontPoppinsBold
+      letter-spacing: 3px
+      color: $Smokey-grey
+
+    &_input
+      border-radius: 6px
+      height: 50%
+      width: 80%
+      border: 1px solid $Light-grey
+      box-sizing: border-box
+      text-indent: 12px
+      font-family: Poppins-Extrabold, serif
+      font-size: 22px
+
+    &_input::placeholder
+      color: $Light-grey
+      font-family: $fontPoppinsBold
+      font-size: 16px
+
+    &_input:focus
+      outline: $Smokey-grey solid 1px
+
