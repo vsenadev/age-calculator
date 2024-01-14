@@ -7,9 +7,10 @@ export function RoutesProvider({children}: any) {
     const [month, setMonth] = useState('');
     const [year, setYear] = useState('');
     const [result, setResult] = useState({})
+    const [errors, setErrors] = useState([])
 
     return (
-        <GlobalContext.Provider value={{ day, month, year, setDay, setMonth, setYear, result, setResult }}>
+        <GlobalContext.Provider value={{ day, month, year, setDay, setMonth, setYear, result, setResult, errors, setErrors }}>
             {children}
         </GlobalContext.Provider>
     )
