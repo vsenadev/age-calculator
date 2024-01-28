@@ -12,7 +12,7 @@ export default function Calculator(){
                 <span className={styles.container__date_text}>years</span>
             </div>
             <div className={styles.container__date}>
-                <span className={styles.container__date_number}>{!result.month ? '- -' : result.month}</span>
+                <span className={styles.container__date_number}>{!result.months ? '- -' : result.months}</span>
                 <span className={styles.container__date_text}>months</span>
             </div>
             <div className={styles.container__date}>
