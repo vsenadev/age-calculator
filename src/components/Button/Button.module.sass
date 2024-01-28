@@ -9,11 +9,22 @@
     border: 1px solid $Off-white
     width: 100%
 
+    @media screen and (max-width: 425px)
+      position: fixed
+      top: 41%
+
   &__button
     min-width: 60px
     min-height: 60px
     width: 12%
     height: 100%
+
+    @media screen and (max-width: 425px)
+      min-width: 60px
+      min-height: 30px
+      position: fixed
+      top: 39%
+      left: 40%
 
     button
       cursor: pointer

@@ -6,6 +6,10 @@
   display: flex
   gap: 50px
 
+  @media screen and (max-width: 425px)
+    height: 30%
+    min-height: 25%
+
   &__box
     display: flex
     width: 20%
@@ -28,6 +32,12 @@
       text-indent: 12px
       font-family: Poppins-Extrabold, serif
       font-size: 22px
+
+      @media screen and (max-width: 425px)
+        width: 6rem
+
+      @media screen and (max-width: 320px)
+        width: 5rem
 
     &_input::placeholder
       color: $Light-grey
